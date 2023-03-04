@@ -1,0 +1,28 @@
+﻿@model LeiChia.Models.Member
+
+<form method="post">
+    <div class="mb-3" asp-for:display name on the label>
+        <label asp-for="Phone"></label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+    <div class="mb-3" asp-for:display name on the label>
+        <label asp-for="Password"></label>
+        <input type="password" asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Mail"></label>
+        <input asp-for="Mail" class="form-control" />
+        <span asp-validation-for="Mail" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width:150px">創建</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary" style="width:150px">
+        返回首頁
+    </a>
+</form>
