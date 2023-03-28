@@ -31,7 +31,8 @@ namespace FRUITSHOP.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<LeiChia.Models.Fruit> fruit = _db.Fruit;
+            return View(fruit);
         }
 
         [HttpPost]

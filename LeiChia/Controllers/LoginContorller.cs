@@ -105,6 +105,7 @@ namespace FRUITSHOP.Controllers
 
             return RedirectToAction("Index", "Product");
         }
+
         public IActionResult Cart()
         {
             // 獲取cookie物件內資訊

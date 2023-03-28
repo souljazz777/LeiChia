@@ -1,50 +1,35 @@
-﻿@*@model Fruitshop.Models.Detail*@
-
-
-@*在表單加入測試看看*@
-@*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
-@*asp-for="Detail_total"*@
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-
-<form method="post">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-            <div class="card shadow-sm">
-                <img src="/img/Banana.jpg"></img>
-                <div class="card-body">
-                    <p class="card-text"></p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <select class="form-select theme" aria-label="Default select example" name="theme" id="theme">
-                            @*<option selected>Open this select menu</option>*@
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                        </select>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">加入購物車</button>
-                        </div>
-                    </div>
-                </div>
+﻿@model IEnumerable<Fruit>
+<div class="row ml-1">
+    @foreach (var obj in Model)
+    {
+        <div class="card" style="width: 18rem;">
+            <img src="@obj.ImageUrl" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@obj.Name</h5>
+                <p class="card-text">@obj.Stock</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modifyStockModal-@obj.Id"
+                        onclick="document.getElementById('modal-title').innerText = '@obj.Name'">
+                    Launch demo modal
+                </button>
             </div>
         </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal" tabindex="-1" id="modifyStockModal-@obj.Id">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">商品</h5>
+                        <h5 class="modal-title" id="modal-title">@obj.Name</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body text-center">
-                        <button type="button" class="btn btn-outline-primary"><i class="bi bi-dash-square-dotted"></i></button>
-                        <input type="text" />
-                        <button type="button" class="btn btn-outline-primary"><i class="bi bi-plus-square-dotted"></i></button>
-                        @*<button class="minus btn btn-outline-primary"><i class="bi bi-dash"></i></button>*@
+                    
+
+                    <div class="modal-body">
+                        <p>Current stock: @obj.Stock</p>
+                        <button class="btn" onclick="decrementStock('@obj.Id')"><i class="bi bi-dash-lg"></i></button>
+                        <input type="text" id="input-@obj.Id" value="0" />
+                        <button class="btn" onclick="incrementStock('@obj.Id', @obj.Stock)"><i class="bi bi-plus-lg"></i></button>
                     </div>
+
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
@@ -52,88 +37,25 @@
                 </div>
             </div>
         </div>
-</form>
+    }
+</div>
 <script>
-    @*function Fruit() {
-
-        var value = document.getElementById("theme").value;
-        var value1 = document.getElementById("theme1").value;
-        var value2 = document.getElementById("theme2").value;
-        var value3 = document.getElementById("theme3").value;
-        var value4 = document.getElementById("theme4").value;
-        var value5 = document.getElementById("theme5").value;
-        var fruit = [value, value1];
-        $.ajax({
-            type: 'POST',
-            url: '@Url.Action("Create", "Product")',
-            data: { 'fruit': fruit },
-            datatype: "json",
-            traditional: true,
-            success: function () {
-                alert("test");
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                alert("jqXHR:" + jqXHR.status + " errorThrown: " + errorThrown);
-            }
-        })
-    }*@
-
-
-
-    //document.getElementByClass("theme").onchange = function () {
-    //    var value = document.getElementByClass("theme").value
-    //    console.log(value)
-    //}
-    function Fruit() {
-        var value = $('#theme').val();
-        $('#Create').attr('href', '/Product/Create/' + value);
-        var value = $('#theme1').val();
-        $('#Create').attr('href', '/Product/Create/' + value1);
-        if (value) {
-            $('#Create').attr('href', '/Product/Create/' + value);
-        } else if (value1) {
-            $('#Create').attr('href', '/Product/Create/' + value1);
+    function decrementStock(id) {
+        var input = document.getElementById("input-" + id);
+        var value = parseInt(input.value) - 1;
+        if (value < 0) {
+            value = 0;
         }
+        input.value = value;
     }
 
-
-
-
-
-
-    //function Fruit() {
-    //    var value = document.getElementById("theme").value;
-    //    var value1 = document.getElementById("theme1").value;
-    //    var value2 = document.getElementById("theme2").value;
-    //    var value3 = document.getElementById("theme3").value;
-    //    var value4 = document.getElementById("theme4").value;
-    //    var value5 = document.getElementById("theme5").value;
-    //    var array = [value, value1];
-    //    if (value) {
-    //        $('#Create').attr('href', '/Product/Create/' + array)
-    //    } else if (value1) {
-    //        $('#Create').attr('href', '/Product/Create/' + value1)
-    //    }
-
-
-    //}
-
-    //function Fruit() {
-    //    var value = document.getElementById("theme").value;
-    //    var value1 = document.getElementById("theme1").value;
-    //    var value2 = document.getElementById("theme2").value;
-    //    var value3 = document.getElementById("theme3").value;
-    //    var value4 = document.getElementById("theme4").value;
-    //    var value5 = document.getElementById("theme5").value;
-    //    var number = 7;
-
-
-    //    $('#Create').attr('href', '/Product/Create/' + value);
-    //    $('#Create').attr('href', '/Product/Create/' + value1);
-    //    $('#Create').attr('href', '/Product/Create/' + value2);
-    //    $('#Create').attr('href', '/Product/Create/' + value3);
-    //    $('#Create').attr('href', '/Product/Create/' + value4);
-    //    $('#Create').attr('href', '/Product/Create/' + value5);
-    //}
-
+    function incrementStock(id, max) {
+        var input = document.getElementById("input-" + id);
+        var value = parseInt(input.value) + 1;
+        if (value > max) {
+            value = max;
+        }
+        input.value = value;
+    }
 </script>
+
