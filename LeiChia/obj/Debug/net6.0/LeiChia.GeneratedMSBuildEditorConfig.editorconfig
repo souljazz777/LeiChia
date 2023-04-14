@@ -9,57 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LeiChia
 build_property.RootNamespace = LeiChia
-build_property.ProjectDir = /Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/
+build_property.ProjectDir = \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia
+build_property.MSBuildProjectDirectory = \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/Login/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/Login/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vTG9naW4uY3NodG1s
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/Login/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vUmVnaXN0ZXIuY3NodG1s
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/Login/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/Product/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9DcmVhdGUuY3NodG1s
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/Product/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/Product/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yuanjiaxiang/Desktop/C\#練習/LeiChia/LeiChia/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-2ousv147kg
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//Mac/Home/Desktop/C\#練習/LeiChia/LeiChia/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-f09fjvwvtk

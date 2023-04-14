@@ -27,6 +27,11 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         //options.SlidingExpiration = true;
         options.AccessDeniedPath = "/Forbidden/";
     });
+builder.Services.AddSession(options =>
+{
+    // 設定 Session 的超時時間為 30 分鐘
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+});
 
 var app = builder.Build();
 
@@ -61,6 +66,7 @@ app.MapDefaultControllerRoute();
 
 app.UseRouting();
 app.UseSession();
+
 
 app.UseAuthorization();
 app.MapDefaultControllerRoute();

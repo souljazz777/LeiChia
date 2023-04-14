@@ -66,6 +66,10 @@
 /Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/obj/Debug/net6.0/LeiChia.pdb
 /Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/obj/Debug/net6.0/LeiChia.genruntimeconfig.cache
 /Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/obj/Debug/net6.0/ref/LeiChia.dll
+/Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/bin/Debug/net6.0/Newtonsoft.Json.dll
+\\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\obj\Debug\net6.0\LeiChia.dll
+\\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\obj\Debug\net6.0\refint\LeiChia.dll
+\\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\obj\Debug\net6.0\LeiChia.pdb
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\bin\Debug\net6.0\appsettings.Development.json
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\bin\Debug\net6.0\appsettings.json
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\bin\Debug\net6.0\LeiChia.staticwebassets.runtime.json
@@ -91,6 +95,7 @@
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+\\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\bin\Debug\net6.0\Newtonsoft.Json.dll
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\bin\Debug\net6.0\System.Drawing.Common.dll
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
@@ -129,8 +134,5 @@
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\obj\Debug\net6.0\scopedcss\bundle\LeiChia.styles.css
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\obj\Debug\net6.0\scopedcss\projectbundle\LeiChia.bundle.scp.css
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\obj\Debug\net6.0\LeiChia.csproj.CopyComplete
-\\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\obj\Debug\net6.0\LeiChia.dll
-\\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\obj\Debug\net6.0\refint\LeiChia.dll
-\\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\obj\Debug\net6.0\LeiChia.pdb
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\obj\Debug\net6.0\LeiChia.genruntimeconfig.cache
 \\Mac\Home\Desktop\C#練習\LeiChia\LeiChia\obj\Debug\net6.0\ref\LeiChia.dll

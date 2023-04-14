@@ -32,8 +32,9 @@
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <a class="btn AddCart btn-primary" onclick="AddToCart('@obj.Id')">加入購物車</a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -48,7 +49,6 @@
         }
         input.value = value;
     }
-
     function incrementStock(id, max) {
         var input = document.getElementById("input-" + id);
         var value = parseInt(input.value) + 1;
@@ -57,5 +57,13 @@
         }
         input.value = value;
     }
+    function AddToCart(id) {
+        var input = document.getElementById("input-" + id);
+        var quantity = input.value;
+        $('.AddCart').attr('href', '/Product/AddToCart/'+ id + '?quantity=' + quantity);
+    }
 </script>
 
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

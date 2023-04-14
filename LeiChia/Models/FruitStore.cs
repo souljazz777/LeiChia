@@ -32,6 +32,8 @@ public class Fruit
     [Url(ErrorMessage = "圖片必須是有效的URL")]
     public string? ImageUrl { get; set; }
 
+    public int Quantity {get; set;}
+
     public ICollection<Detail> Detail { get; set; }
 }
 

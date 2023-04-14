@@ -1,26 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/LeiChia.csproj": {}
+    "\\\\Mac\\Home\\Desktop\\C#練習\\LeiChia\\LeiChia\\LeiChia.csproj": {}
   },
   "projects": {
-    "/Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/LeiChia.csproj": {
+    "\\\\Mac\\Home\\Desktop\\C#練習\\LeiChia\\LeiChia\\LeiChia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/LeiChia.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\C#練習\\LeiChia\\LeiChia\\LeiChia.csproj",
         "projectName": "LeiChia",
-        "projectPath": "/Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/LeiChia.csproj",
-        "packagesPath": "/Users/yuanjiaxiang/.nuget/packages/",
-        "outputPath": "/Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/obj/",
+        "projectPath": "\\\\Mac\\Home\\Desktop\\C#練習\\LeiChia\\LeiChia\\LeiChia.csproj",
+        "packagesPath": "C:\\Users\\yuanjiaxiang\\.nuget\\packages\\",
+        "outputPath": "\\\\Mac\\Home\\Desktop\\C#練習\\LeiChia\\LeiChia\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/yuanjiaxiang/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\yuanjiaxiang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,6 +47,10 @@
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[6.0.8, )"
             },
             "microsoft.entityframeworkcore.design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -73,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
