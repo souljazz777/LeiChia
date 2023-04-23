@@ -25,7 +25,7 @@ namespace FRUITSHOP.Controllers
         {
             _db = db;
         }
-        
+
         // GET: /<controller>/
         public IActionResult Index()
         {
@@ -52,7 +52,7 @@ namespace FRUITSHOP.Controllers
                 Amount = quantity,
                 SubTotal = _db.Fruit.Single(m => m.Id == id).Price * quantity
             };
-            
+
             //判斷 Session 內有無購物車
             List<CartItem> cart = SessionHelper.GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart");
             if (cart == null)
@@ -97,6 +97,18 @@ namespace FRUITSHOP.Controllers
             {
                 SessionHelper.SetObjectAsJson(HttpContext.Session, "cart", cart);
             }
+
+            return RedirectToAction("Cart", "Product");
+        }
+        public IActionResult EditItem(int Id, int quantity)
+        {
+            List<CartItem> cart = SessionHelper.
+                GetObjectFromJson<List<CartItem>>(HttpContext.Session, "cart");
+            //用FindIndex查詢目標在List裡的位置
+            int index = cart.FindIndex(m => m.Fruit.Id.Equals(Id));
+            cart[index].Amount = quantity;
+            cart[index].SubTotal = cart[index].Fruit.Price * quantity;
+            SessionHelper.SetObjectAsJson(HttpContext.Session, "cart", cart);
 
             return RedirectToAction("Cart", "Product");
         }

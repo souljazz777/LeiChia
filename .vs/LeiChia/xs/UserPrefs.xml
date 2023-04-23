@@ -1,26 +1,49 @@
 ﻿<Properties StartupConfiguration="{8C9D2FB5-F74C-4E3F-9095-77170B5DE52E}|Default">
-  <MonoDevelop.Ide.ItemProperties.LeiChia PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="LeiChia/Program.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.LeiChia PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LeiChia/Controllers/ProductController.cs">
     <Files>
-      <File FileName="LeiChia/appsettings.json" Line="10" Column="64" />
-      <File FileName="LeiChia/Program.cs" Line="19" Column="18" />
+      <File FileName="LeiChia/appsettings.json" />
+      <File FileName="LeiChia/Program.cs" />
+      <File FileName="LeiChia/Data/ApplicationDbContext.cs" />
+      <File FileName="LeiChia/Controllers/HomeController.cs" />
+      <File FileName="LeiChia/Controllers/LoginContorller.cs" />
+      <File FileName="LeiChia/Controllers/MemberController.cs" />
+      <File FileName="LeiChia/Controllers/ProductController.cs" Line="105" Column="1" />
+      <File FileName="LeiChia/Models/FruitStore.cs" />
+      <File FileName="LeiChia/Views/Product/Index.cshtml" />
+      <File FileName="LeiChia/wwwroot/css/site.css" />
+      <File FileName="LeiChia/Views/Product/Cart.cshtml" />
+      <File FileName="LeiChia/Helpers/CartClass.cs" />
+      <File FileName="LeiChia/Views/Home/Index.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LeiChia" expanded="True">
             <Node name="LeiChia" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ProductController.cs" selected="True" />
+              </Node>
+              <Node name="Helpers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Product" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
