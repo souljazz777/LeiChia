@@ -77,7 +77,8 @@ namespace FRUITSHOP.Controllers
                 }
                 SessionHelper.SetObjectAsJson(HttpContext.Session, "cart", cart);
             }
-            return RedirectToAction("Cart", "Product");
+            //return RedirectToAction("Cart", "Product");
+            return NoContent();
         }
         public IActionResult RemoveItem(int id)
         {

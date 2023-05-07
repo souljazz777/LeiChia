@@ -47,11 +47,11 @@ namespace FRUITSHOP.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Register(Member obj)
         {
-            if (ModelState.IsValid)
+            if (obj != null)
             {
                 _db.Member.Add(obj);
                 _db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Home");
             }
             return View();
         }

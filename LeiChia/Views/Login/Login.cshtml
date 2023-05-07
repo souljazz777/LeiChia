@@ -1,23 +1,24 @@
 ﻿@model LeiChia.Models.Member
-<h2>@User.Identity.Name</h2>
-    <h2>@User.Identity.IsAuthenticated</h2>
 
-    <h2>會員登入</h2>
 
-    <form method="post">
-        <div class="mb-3" asp-for:display name on the label>
-            <label asp-for="Phone">電話號碼</label>
-            <input asp-for="Phone" class="form-control" />
-            <span asp-validation-for="Phone" class="text-danger"></span>
-        </div>
-        <div class="mb-3" asp-for:display name on the label>
-            <label asp-for="Password">會員密碼</label>
-            <input type="password" asp-for="Password" class="form-control" />
-            <span asp-validation-for="Password" class="text-danger"></span>
-        </div>
+<h2>會員登入</h2>
 
-        <button type="submit" class="btn btn-primary" style="width:150px">登入</button>
-        <a asp-controller="Login" asp-action="Index" class="btn btn-secondary" style="width:150px">
-            返回首頁
-        </a>
-    </form>
+<form method="post" id="LoginForm">
+    <div class="mb-3" asp-for:display name on the label>
+        <label for="Phone">電話號碼</label>
+        <input name="Phone" type="tel" id="Phone" class="form-control" />
+        <span class="text-danger"></span>
+    </div>
+    <div class="mb-3" asp-for:display name on the label>
+        <label for="Password">會員密碼</label>
+        <input name="Password" type="password" class="form-control" />
+        <span class="text-danger"></span>
+    </div>
+
+    <button type="submit" id="LoginBtn" class="btn btn-primary" style="width:150px">登入</button>
+    <a onclick="TurnToHome()" class="btn btn-secondary" style="width:150px">
+        返回首頁
+    </a>
+</form>
+
+
