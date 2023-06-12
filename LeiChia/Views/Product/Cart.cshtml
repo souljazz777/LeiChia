@@ -40,12 +40,12 @@
                         <div class="modal-body">
                             @*<p>Current stock: @item.Stock</p>*@
                             <button class="btn" onclick="decrementStock('@item.Fruit.Id')"><i class="bi bi-dash-lg"></i></button>
-                            <input type="text" id="input-@item.Fruit.Id" value="0" />
+                            <input type="text" class="quantity" value="@item.Amount" />
                             <button class="btn" onclick="incrementStock('@item.Fruit.Id')"><i class="bi bi-plus-lg"></i></button>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <a class="btn AddItem btn-primary" onclick="AddItem('@item.Fruit.Id')">加入購物車</a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                            <a class="btn AddItem btn-primary" onclick="Edit('@item.Fruit.Id')">更改</a>
                         </div>
                     </div>
                 </div>
@@ -55,21 +55,4 @@
     </tbody>
 </table>
 
-<script>function AddItem(id) {
-        var input = document.getElementById("input-" + id);
-        var quantity = input.value;
-        $('.AddItem').attr('href', '/Product/EditItem/' + id + '?quantity=' + quantity);
-    }
-    function decrementStock(id) {
-        var input = document.getElementById("input-" + id);
-        var value = parseInt(input.value) - 1;
-        if (value < 0) {
-            value = 0;
-        }
-        input.value = value;
-    }
-    function incrementStock(id) {
-        var input = document.getElementById("input-" + id);
-        var value = parseInt(input.value) + 1;
-        input.value = value;
-    }</script>
+

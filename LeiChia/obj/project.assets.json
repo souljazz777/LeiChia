@@ -2056,11 +2056,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/LeiChia.csproj",
+      "projectUniqueName": "/Users/yuanjiaxiang/Desktop/C#練習/C#練習題/LeiChia/LeiChia/LeiChia.csproj",
       "projectName": "LeiChia",
-      "projectPath": "/Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/LeiChia.csproj",
+      "projectPath": "/Users/yuanjiaxiang/Desktop/C#練習/C#練習題/LeiChia/LeiChia/LeiChia.csproj",
       "packagesPath": "/Users/yuanjiaxiang/.nuget/packages/",
-      "outputPath": "/Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/obj/",
+      "outputPath": "/Users/yuanjiaxiang/Desktop/C#練習/C#練習題/LeiChia/LeiChia/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/yuanjiaxiang/.nuget/NuGet/NuGet.Config"
@@ -2070,6 +2070,7 @@
       ],
       "sources": {
         "/usr/local/share/dotnet/library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.302/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2126,7 +2127,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
       }
     }
   },

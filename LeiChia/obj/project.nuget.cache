@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x3RVTZcS6UJWMM8zdcgmRYrzjKYuJQzB5mB76T9BVS6X55Ta+2t0G8DLBUVJDmKFQiSD2eNWqexmY1c/0HhrTA==",
+  "dgSpecHash": "QpRGqG5mNWGTQSmVLQ0Qugj/ncBlf3e3gGRpSHVeNHgK5fPAP66+tqoz7rv6f+MlH88PmnkJ01/Cm11sisEQPQ==",
   "success": true,
-  "projectFilePath": "/Users/yuanjiaxiang/Desktop/C#練習/LeiChia/LeiChia/LeiChia.csproj",
+  "projectFilePath": "/Users/yuanjiaxiang/Desktop/C#練習/C#練習題/LeiChia/LeiChia/LeiChia.csproj",
   "expectedPackageFiles": [
     "/Users/yuanjiaxiang/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/yuanjiaxiang/.nuget/packages/microsoft.aspnetcore.diagnostics.entityframeworkcore/6.0.10/microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.10.nupkg.sha512",

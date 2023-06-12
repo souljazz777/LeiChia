@@ -3,25 +3,27 @@
 }
 
 
-function decrementStock(id) {
-    var input = document.getElementById("input-" + id);
-    var value = parseInt(input.value) - 1;
-    if (value < 0) {
-        value = 0;
+function decrementStock() {
+    var input = $(".quantity");
+    var value = parseInt(input.val());
+    
+    if (value == 0) {
+        input.val(0);
     }
-    input.value = value;
+    else {
+        value = value - 1;
+    }
+    input.val(value);
 }
-function incrementStock(id, max) {
-    var input = document.getElementById("input-" + id);
-    var value = parseInt(input.value) + 1;
-    if (value > max) {
-        value = max;
-    }
-    input.value = value;
+function incrementStock() {
+    var input = $(".quantity");
+    var value = parseInt(input.val());
+    value = value + 1;
+    input.val(value);
 }
 function AddToCart(id) {
-    var input = document.getElementById("input-" + id);
-    var quantity = input.value;
+    var input = $(".quantity");
+    var quantity = input.val();
     //$('.AddCart').attr('href', '/Product/AddToCart/' + id + '?quantity=' + quantity);
 
     $.ajax({
@@ -46,6 +48,26 @@ function AddToCart(id) {
 }
 
 
+
+function Edit(id) {
+    var input = $(".quantity");
+    var quantity = input.val();
+    $.ajax({
+    type: 'post',
+        url: '/Product/EditItem',
+        data: {
+            id: parseInt(id),
+            quantity: parseInt(quantity)
+        },
+        success: function (response) {
+            alert('更新成功')
+            window.location.reload()
+        },
+        error: function (response) {
+            console.log(response)
+        }
+    });
+}
 
 
 

@@ -25,8 +25,8 @@
                     <div class="modal-body">
                         <p>Current stock: @obj.Stock</p>
                         <button class="btn" onclick="decrementStock('@obj.Id')"><i class="bi bi-dash-lg"></i></button>
-                        <input type="text" id="input-@obj.Id" value="0" />
-                        <button class="btn" onclick="incrementStock('@obj.Id', @obj.Stock)"><i class="bi bi-plus-lg"></i></button>
+                        <input type="text" class="quantity" value="0" />
+                        <button class="btn" onclick="incrementStock('@obj.Id')"><i class="bi bi-plus-lg"></i></button>
                     </div>
 
 
